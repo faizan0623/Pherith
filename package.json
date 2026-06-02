@@ -29,7 +29,8 @@
     "electron": "NODE_ENV=development electron .",
     "electron:dev": "concurrently \"npm start\" \"wait-on http://localhost:3000 && NODE_ENV=development electron .\"",
     "electron:build": "npm run build && electron-builder",
-    "electron:build:mac": "npm run build && electron-builder --mac"
+    "electron:build:mac": "npm run build && electron-builder --mac",
+    "electron:build:win": "npm run build && electron-builder --win"
   },
   "build": {
     "appId": "com.biocatalyx.app",
@@ -40,6 +41,11 @@
     "mac": {
       "category": "public.app-category.productivity",
       "target": "dmg"
+    },
+    "win": {
+      "target": "zip",
+      "signAndEditExecutable": false,
+      "icon": "public/icon.ico"
     },
     "files": [
       "build/**/*",
