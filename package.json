@@ -1,5 +1,5 @@
 {
-  "name": "biocatalyx",
+  "name": "pherith",
   "version": "1.0.0",
   "description": "Campaign management software for biocatalysis research",
   "author": "Faizan Bhat",
@@ -33,8 +33,8 @@
     "electron:build:win": "npm run build && electron-builder --win"
   },
   "build": {
-    "appId": "com.biocatalyx.app",
-    "productName": "Biocatalyx",
+    "appId": "com.pherith.app",
+    "productName": "Pherith",
     "extraMetadata": {
       "main": "main.js"
     },
