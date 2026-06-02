@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biocatalyx — Biocatalysis Research Platform</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#fff;color:#1a1a1a;max-width:720px;margin:0 auto;padding:2rem 1.5rem;}
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;padding:4px 10px;border-radius:6px;background:#f0f0ec;border:0.5px solid #ddd;color:#666;margin-bottom:1.25rem;}
+h1{font-size:28px;font-weight:500;line-height:1.3;margin-bottom:1rem;}
+.tagline{font-size:16px;color:#555;line-height:1.7;max-width:560px;margin-bottom:1.75rem;}
+.btn-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:2.5rem;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:9px 18px;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;text-decoration:none;border:0.5px solid #ccc;color:#1a1a1a;background:#fff;}
+.btn:hover{background:#f5f5f5;}
+.btn-primary{background:#0F6E56;border-color:#0F6E56;color:#E1F5EE;}
+.btn-primary:hover{background:#085041;}
+hr{border:none;border-top:0.5px solid #e5e5e5;margin:2rem 0;}
+.section-label{font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#999;margin-bottom:0.75rem;}
+h2{font-size:18px;font-weight:500;margin-bottom:0.75rem;}
+.desc{font-size:15px;color:#555;line-height:1.7;max-width:600px;margin-bottom:1.5rem;}
+.feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:2rem;}
+.feature-card{background:#f8f8f5;border-radius:10px;padding:1rem 1.25rem;border:0.5px solid #e5e5e5;}
+.feature-card h3{font-size:14px;font-weight:500;margin-bottom:6px;}
+.feature-card p{font-size:13px;color:#666;line-height:1.6;}
+.dl-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:2rem;}
+.dl-card{background:#fff;border:0.5px solid #e5e5e5;border-radius:10px;padding:1rem 1.25rem;display:flex;flex-direction:column;gap:8px;}
+.dl-card .platform{font-size:13px;font-weight:500;}
+.dl-card .note{font-size:12px;color:#999;}
+.dl-card a{display:inline-flex;align-items:center;gap:6px;font-size:13px;padding:7px 14px;border-radius:8px;background:#0F6E56;color:#E1F5EE;text-decoration:none;font-weight:500;width:fit-content;}
+.dl-card a:hover{background:#085041;}
+.meta-row{display:flex;gap:2rem;flex-wrap:wrap;margin-bottom:2rem;}
+.meta-item .val{font-size:15px;font-weight:500;}
+.meta-item .lbl{font-size:12px;color:#999;margin-top:2px;}
+footer{padding:1.5rem 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:0.5px solid #e5e5e5;}
+footer p,footer a{font-size:12px;color:#999;text-decoration:none;}
+footer a:hover{color:#333;}
+</style>
+</head>
+<body>
+
+<div style="padding-top:2rem;">
+  <div class="badge">v1.0.0 — initial release</div>
+  <h1>Biocatalyx</h1>
+  <p class="tagline">A desktop platform for structured design, documentation, and analysis of biocatalysis research campaigns. Built for enzyme discovery, directed evolution, and reaction engineering workflows.</p>
+  <div class="btn-row">
+    <a class="btn btn-primary" href="https://github.com/faizan0623/Biocatalyx/releases/tag/v1.0.0">↓ Download</a>
+    <a class="btn" href="https://github.com/faizan0623/Biocatalyx">View on GitHub</a>
+  </div>
+</div>
+
+<hr>
+
+<p class="section-label">Overview</p>
+<h2>Designed for the biocatalysis researcher</h2>
+<p class="desc">Biocatalyx provides a structured environment for managing the full lifecycle of a biocatalysis campaign — from substrate screening and enzyme variant tracking to reaction condition optimisation and result documentation. It runs entirely offline, keeping experimental data local and reproducible.</p>
+
+<div class="feature-grid">
+  <div class="feature-card"><h3>Enzyme screening module</h3><p>Track substrate scope, conversion data, and selectivity across enzyme panels in a structured, exportable format.</p></div>
+  <div class="feature-card"><h3>Design of experiments</h3><p>Build and visualise factorial and optimisation DoE campaigns with integrated response surface analysis.</p></div>
+  <div class="feature-card"><h3>Campaign documentation</h3><p>Maintain structured records of hypotheses, conditions, and outcomes across multi-stage research campaigns.</p></div>
+  <div class="feature-card"><h3>Offline-first, exportable</h3><p>No cloud dependency. All data stays local. Export to standard formats for integration with lab notebooks and publications.</p></div>
+</div>
+
+<hr>
+
+<p class="section-label">Download</p>
+<h2>Get Biocatalyx</h2>
+<div class="dl-grid">
+  <div class="dl-card">
+    <div class="platform">macOS</div>
+    <p class="note">Apple Silicon (M1/M2/M3) · macOS 12+</p>
+    <a href="https://github.com/faizan0623/Biocatalyx/releases/download/v1.0.0/Biocatalyx-1.0.0-arm64.dmg">↓ Download .dmg</a>
+  </div>
+  <div class="dl-card">
+    <div class="platform">Windows</div>
+    <p class="note">ARM64 · Windows 10/11 · Extract zip and run .exe</p>
+    <a href="https://github.com/faizan0623/Biocatalyx/releases/download/v1.0.0/Biocatalyx-1.0.0-arm64-win.zip">↓ Download .zip</a>
+  </div>
+</div>
+
+<hr>
+
+<p class="section-label">Project status</p>
+<h2>Early-stage research software</h2>
+<p class="desc">Biocatalyx is under active development as a non-commercial research tool. Feedback from the biocatalysis and enzyme engineering community is welcome. Institutional enquiries and collaboration proposals can be directed via GitHub.</p>
+<div class="meta-row">
+  <div class="meta-item"><div class="val">v1.0.0</div><div class="lbl">Current version</div></div>
+  <div class="meta-item"><div class="val">Non-commercial</div><div class="lbl">License</div></div>
+  <div class="meta-item"><div class="val">Electron + React</div><div class="lbl">Stack</div></div>
+  <div class="meta-item"><div class="val">Open source</div><div class="lbl">GitHub</div></div>
+</div>
+
+<footer>
+  <p>Biocatalyx · developed by Faizan Bhat</p>
+  <a href="https://github.com/faizan0623/Biocatalyx">github.com/faizan0623/Biocatalyx</a>
+</footer>
+
+</body>
+</html>
